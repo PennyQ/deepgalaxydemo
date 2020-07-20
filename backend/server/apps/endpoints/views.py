@@ -24,6 +24,11 @@ from rest_framework.response import Response
 from apps.ml.registry import MLRegistry
 from server.wsgi import registry
 
+from django.views.generic import CreateView, ListView
+from django.urls import reverse_lazy
+from .models import Post
+from .forms import PostForm
+
 class EndpointViewSet(
     mixins.RetrieveModelMixin, mixins.ListModelMixin, viewsets.GenericViewSet
 ):
@@ -202,3 +207,14 @@ class StopABTestView(views.APIView):
                             status=status.HTTP_400_BAD_REQUEST
             )
         return Response({"message": "AB Test finished.", "summary": summary})
+
+# ---------------- CreatePostView -----------------
+class CreatePostView(CreateView): # new
+    model = Post
+    form_class = PostForm
+    template_name = 'post.html'
+    success_url = reverse_lazy('home')
+
+class HomePageView(ListView):
+    model = Post
+    template_name = 'home.html'

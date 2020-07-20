@@ -34,5 +34,9 @@ try:
                             owner="Piotr",
                             algorithm_description="Extra Trees with simple pre- and post-processing",
                             algorithm_code=inspect.getsource(RandomForestClassifier))
+
+    # TODO: add Deep Galaxy model and model definition in /income_classifier/deepgalaxy.py
+
+
 except Exception as e:
     print("Exception while loading the algorithms to the registry,", str(e))
