@@ -6,9 +6,13 @@ from django.conf.urls.static import static # new
 
 from apps.endpoints.urls import urlpatterns as endpoints_urlpatterns
 
+# import settings
+# from django.conf.urls import url
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('apps.endpoints.urls')), # new
+    # url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
 ]
 
 urlpatterns += endpoints_urlpatterns

@@ -26,7 +26,7 @@ from server.wsgi import registry
 
 from django.views.generic import CreateView, ListView
 from django.urls import reverse_lazy
-from .models import Post
+from .models import Post, Home
 from .forms import PostForm
 
 class EndpointViewSet(
@@ -215,6 +215,17 @@ class CreatePostView(CreateView): # new
     template_name = 'post.html'
     success_url = reverse_lazy('home')
 
+
 class HomePageView(ListView):
-    model = Post
+    context_object_name = 'context'
     template_name = 'home.html'
+    queryset = Home.objects.all()
+
+    # home = Home()
+    # home.image = "prediction/*.png"
+    # home.save()
+
+    def get_context_data(self, **kwargs):
+        context = super(HomePageView, self).get_context_data(**kwargs)
+        context['post'] = Post.objects.all()
+        return context
