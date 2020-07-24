@@ -29,6 +29,10 @@ from django.urls import reverse_lazy
 from .models import Post, Home
 from .forms import PostForm
 
+from apps.ml.income_classifier.deepgalaxy import DeepGalaxyClassifier
+from django.http import HttpResponse, HttpResponseRedirect
+
+
 class EndpointViewSet(
     mixins.RetrieveModelMixin, mixins.ListModelMixin, viewsets.GenericViewSet
 ):
@@ -214,6 +218,17 @@ class CreatePostView(CreateView): # new
     form_class = PostForm
     template_name = 'post.html'
     success_url = reverse_lazy('home')
+
+    def form_valid(self, form):
+        self.object = form.save(commit=False)
+        self.object.user = self.request.user
+        self.object.save()
+        # trigger deepgalaxy code
+        my_alg = DeepGalaxyClassifier()
+        response = my_alg.compute_prediction('/Users/pennyqxr/Code/deepgalaxydemo/backend/server/media/images/*.jpg')
+        print("----triggered------")
+        return HttpResponseRedirect(self.get_success_url())
+
 
 
 class HomePageView(ListView):
