@@ -1,13 +1,7 @@
 from django.test import TestCase
 
-import inspect
 from apps.ml.classifier.deepgalaxy import DeepGalaxyClassifier
-
-import glob
-import cv2
-import numpy as np
-import os
-from apps.ml.classifier.cvae import *
+# from apps.ml.classifier.cvae import *
 
 
 class MLTests(TestCase):

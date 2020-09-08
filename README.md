@@ -30,26 +30,37 @@ In the `docker` directory there are dockerfiles for running the service in the c
 
 ## How to use
 
-Install dependencies from `requirements.txt`
+- Install dependencies from `requirements.txt`
 
-To clean historic data, you can
+- To clean historic data, you can
+
+    ```
+    >>> rm db.sqlite3
+    >>> python manage.py makemigrations
+    >>> python manage.py migrate
+    ```
+
+- To run the server, you can
+
+    ```python manage.py runserver```
+
+    Open your browser and go to `0.0.0.0:8000/post/` to start, have fun! ;) 
+
+- To test the code and endpoint (TBD)
+
+    ```
+    >>> python manage.py test apps.ml.tests
+    >>> python manage.py test apps.endpoints.tests
+    >>> python manage.py test apps
+    ```
+
+## Containerization 
+
+The docker compose file consists of two services:
+- Nginx: our web server and reverse proxy. Where requests from the internet arrive first and get handled quickly.  
+- WSGI server: uses Gunicorn, a production-grade WSGI server. Worker that actually calls Python code when a request comes in. 
 
 ```
->>> rm db.sqlite3
->>> python manage.py makemigrations
->>> python manage.py migrate
+>>> docker-compose down -v
+>>> docker-compose up --build
 ```
-
-To run the server, you can
-
-```python manage.py runserver```
-
-To test the code and endpoint (TBD)
-
-```
->>> python manage.py test apps.ml.tests
->>> python manage.py test apps.endpoints.tests
->>> python manage.py test apps
-```
-
-Open your browser and go to `0.0.0.0:8000/post/` to start, have fun! ;) 

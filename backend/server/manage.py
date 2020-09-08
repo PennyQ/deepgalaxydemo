@@ -3,6 +3,7 @@
 import os
 import sys
 
+
 def main():
     sys.path.append("/Users/pennyqxr/Code/deepgalaxydemo/backend/server/apps/ml/classifier")
     print(sys.path)

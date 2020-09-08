@@ -10,7 +10,7 @@
 # deepgalaxydemo/backend/server/apps/endpoints/models.py: 1
 # deepgalaxydemo/backend/server/apps/endpoints/urls.py: 1,2
 # deepgalaxydemo/backend/server/apps/endpoints/views.py: 15
-# deepgalaxydemo/backend/server/apps/ml/classifier/deepgalaxy.py: 8
+# deepgalaxydemo/backend/server/apps/ml/classifier/deepgalaxy.py: 9
 # deepgalaxydemo/backend/server/apps/ml/tests.py: 1
 # deepgalaxydemo/backend/server/manage.py: 12
 # deepgalaxydemo/backend/server/server/urls.py: 3,4,5
@@ -19,77 +19,36 @@ Django == 2.2.4
 # deepgalaxydemo/backend/server/apps/ml/classifier/efficientnet/model.py: 35,36
 Keras_Applications == 1.0.8
 
-# deepgalaxydemo/backend/server/apps/endpoints/views.py: 14
-# deepgalaxydemo/backend/server/apps/ml/tests.py: 4,10
-apps-sdk == 0.2.4.1
-
-# deepgalaxydemo/backend/server/apps/endpoints/views.py: 14
-# deepgalaxydemo/backend/server/apps/ml/tests.py: 4,10
-bmcs == 0.0.2a46
-
 # deepgalaxydemo/backend/server/apps/endpoints/views.py: 6,7
 djangorestframework == 3.10.3
 
 # deepgalaxydemo/backend/server/apps/ml/classifier/cvae.py: 3
 # deepgalaxydemo/backend/server/apps/ml/classifier/data_io.py: 3
+# deepgalaxydemo/backend/server/apps/ml/classifier/deepgalaxy.py: 4
 h5py == 2.10.0
 
-# deepgalaxydemo/backend/server/apps/endpoints/views.py: 14
-# deepgalaxydemo/backend/server/apps/ml/tests.py: 4,10
-idaes-pse == 1.6.3
-
-# deepgalaxydemo/backend/server/apps/ml/classifier/deepgalaxy.py: 1
 # deepgalaxydemo/research/train_income_classifier.ipynb: 8
 joblib == 0.14.0
 
-# deepgalaxydemo/backend/server/apps/ml/classifier/deepgalaxy.py: 6
+# deepgalaxydemo/backend/server/apps/ml/classifier/deepgalaxy.py: 7
 matplotlib == 3.3.0
-
-# deepgalaxydemo/backend/server/apps/endpoints/views.py: 14
-# deepgalaxydemo/backend/server/apps/ml/tests.py: 4,10
-monero-agent == 3.0.1
-
-# deepgalaxydemo/backend/server/apps/endpoints/views.py: 14
-# deepgalaxydemo/backend/server/apps/ml/tests.py: 4,10
-neurom == 1.5.2
 
 # deepgalaxydemo/backend/server/apps/endpoints/views.py: 5
 # deepgalaxydemo/backend/server/apps/ml/classifier/cvae.py: 2
 # deepgalaxydemo/backend/server/apps/ml/classifier/data_io.py: 1
+# deepgalaxydemo/backend/server/apps/ml/classifier/deepgalaxy.py: 6
 # deepgalaxydemo/backend/server/apps/ml/classifier/efficientnet/preprocessing.py: 15
-# deepgalaxydemo/backend/server/apps/ml/tests.py: 8
 # deepgalaxydemo/research/ab_test.ipynb: 2
 # deepgalaxydemo/research/train_income_classifier.ipynb: 2
 numpy == 1.17.3
 
-# deepgalaxydemo/backend/server/apps/ml/classifier/deepgalaxy.py: 4
-# deepgalaxydemo/backend/server/apps/ml/tests.py: 7
-opencv_python == 4.3.0.36
-
-# deepgalaxydemo/backend/server/apps/endpoints/views.py: 14
-# deepgalaxydemo/backend/server/apps/ml/tests.py: 4,10
-oricreate == 0.0.4a7
-
-# deepgalaxydemo/backend/server/apps/endpoints/views.py: 14
-# deepgalaxydemo/backend/server/apps/ml/tests.py: 4,10
-oujago == 0.1.14
-
 # deepgalaxydemo/backend/server/apps/ml/classifier/data_io.py: 2
-# deepgalaxydemo/backend/server/apps/ml/classifier/deepgalaxy.py: 2
 # deepgalaxydemo/research/ab_test.ipynb: 3
 # deepgalaxydemo/research/train_income_classifier.ipynb: 3
 pandas == 0.25.2
 
-# deepgalaxydemo/backend/server/apps/endpoints/views.py: 14
-# deepgalaxydemo/backend/server/apps/ml/tests.py: 4,10
-pti-analyzer == 0.0.19
-
 # deepgalaxydemo/research/ab_test.ipynb: 5
 requests == 2.22.0
-
-# deepgalaxydemo/backend/server/apps/endpoints/views.py: 14
-# deepgalaxydemo/backend/server/apps/ml/tests.py: 4,10
-scikit-rf == 0.15.4
 
 # deepgalaxydemo/backend/server/apps/ml/classifier/efficientnet/preprocessing.py: 16
 scikit_image == 0.17.2
@@ -101,23 +60,12 @@ scikit_learn == 0.21.3
 # deepgalaxydemo/backend/server/apps/ml/classifier/efficientnet/model.py: 34
 six == 1.15.0
 
-# deepgalaxydemo/backend/server/apps/endpoints/views.py: 14
-# deepgalaxydemo/backend/server/apps/ml/tests.py: 4,10
-superdesk-core == 1.33.5
-
-# deepgalaxydemo/backend/server/apps/endpoints/views.py: 14
-# deepgalaxydemo/backend/server/apps/ml/tests.py: 4,10
-superdesk-server == 0.1.6
-
 # deepgalaxydemo/backend/server/apps/ml/classifier/cvae.py: 1
+# deepgalaxydemo/backend/server/apps/ml/classifier/deepgalaxy.py: 5
 # deepgalaxydemo/backend/server/apps/ml/classifier/efficientnet/__init__.py: 50,75
 # deepgalaxydemo/backend/server/apps/ml/classifier/efficientnet/model.py: 332
 tensorflow == 2.2.0
 
-# deepgalaxydemo/backend/server/apps/endpoints/views.py: 14
-# deepgalaxydemo/backend/server/apps/ml/tests.py: 4,10
-xmemx == 0.0.2
-
-# deepgalaxydemo/backend/server/apps/endpoints/views.py: 14
-# deepgalaxydemo/backend/server/apps/ml/tests.py: 4,10
-xrsrv == 0.2.dev0
+scikit-build == 0.11.1
+# deepgalaxydemo/backend/server/apps/ml/classifier/deepgalaxy.py: 2
+opencv_python == 4.4.0.42

@@ -1,8 +1,7 @@
 import tensorflow as tf
 import numpy as np
 import h5py
-from data_io import DataIO
-import efficientnet.tfkeras as efn
+from .data_io import DataIO
 
 
 class VariationalAutoEncoder(tf.keras.Model):
