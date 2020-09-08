@@ -3,8 +3,11 @@ import pandas as pd
 import glob
 import cv2
 import os 
+import h5py
+import tensorflow as tf
+import numpy as np
 import matplotlib.pyplot as plt
-from cvae import *
+from cvae import VariationalAutoEncoder
 from django.conf import settings
 
 class DeepGalaxyClassifier:
